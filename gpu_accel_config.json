@@ -1,0 +1,12 @@
+{
+  "language": "ZH_CN",
+  "max_gpu_mem_ratio": 0.8,
+  "max_cpu_threads": 3,
+  "auto_fallback": true,
+  "tiling_threshold_mb": 256,
+  "default_precision": "float32",
+  "enable_cache": true,
+  "cache_ttl_days": 7,
+  "theme": "light",
+  "task_history_limit": 50
+}
