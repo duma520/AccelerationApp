@@ -1,11 +1,10 @@
 # AccelerationApp （见源码内 VERSION 常量）
 
-> **一句话**：AccelerationApp —— 一个用 Python 写的 Windows 桌面程序，
-> 主程序为 `accelerationapp.py`，界面技术栈 tkinter（Python 自带 GUI，无需额外安装）。
+> **一句话**：AccelerationApp —— 矩阵计算。
 >
 > **适合谁**：想直接用现成工具、不想自己写代码的 Windows 用户。
 >
-> **解决什么问题**：把这件事做成开箱即用的程序 —— 下载解压、装上依赖、双击就能跑。
+> **解决什么问题**：把「矩阵计算」这件事做成开箱即用的程序 —— 下载解压、装上依赖、双击就能跑。
 
 ---
 
@@ -54,7 +53,7 @@
 在源码目录打开命令行，执行：
 
 ```
-pip install Pillow PySide6 cpuinfo dataclasses matplotlib numpy psutil pyopencl
+pip install Pillow PySide6 cpuinfo matplotlib numpy psutil pyopencl
 ```
 
 > 清单是从源码的实际 import 汇总出来的；若某个包名不准确，以 pip 报错提示的正确包名为准。
@@ -75,7 +74,7 @@ python accelerationapp.py
 | --- | --- |
 | 界面框架 | tkinter（Python 自带 GUI，无需额外安装） |
 | 是否有 main 入口 | 是，可直接 python 主程序.py 运行 |
-| 第三方依赖数 | 8 个 |
+| 第三方依赖数 | 7 个 |
 
 ## 4. 命令行参数
 
@@ -96,7 +95,7 @@ python accelerationapp.py
 ```
 
 - 入口文件 `accelerationapp.py`，带 if __name__ == '__main__' 保护。
-- 依赖的第三方库：`Pillow`、`PySide6`、`cpuinfo`、`dataclasses`、`matplotlib`、`numpy`、`psutil`、`pyopencl`。
+- 依赖的第三方库：`Pillow`、`PySide6`、`cpuinfo`、`matplotlib`、`numpy`、`psutil`、`pyopencl`。
 - 全部业务逻辑在仓库内可见，没有编译产物、没有联网下发代码。
 
 ## 7. 排错手册
